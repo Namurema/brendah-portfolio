@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f0f1e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#252540"/>
+      <stop offset="100%" style="stop-color:#1e1e35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#d63450"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Browser top bar -->
+  <rect x="180" y="40" width="440" height="420" rx="12" fill="url(#card)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Browser address bar -->
+  <rect x="180" y="40" width="440" height="44" rx="12" fill="#2a2a45"/>
+  <rect x="180" y="68" width="440" height="16" fill="#2a2a45"/>
+
+  <!-- Browser dots -->
+  <circle cx="208" cy="62" r="6" fill="#ff5f57"/>
+  <circle cx="228" cy="62" r="6" fill="#febc2e"/>
+  <circle cx="248" cy="62" r="6" fill="#28c840"/>
+
+  <!-- Address bar input -->
+  <rect x="270" y="52" width="280" height="20" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="285" y="66" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.4)">chrome-extension://brendah...</text>
+
+  <!-- Extension icon in toolbar -->
+  <rect x="558" y="52" width="20" height="20" rx="4" fill="url(#accent)"/>
+  <text x="562" y="66" font-family="Arial" font-size="13" font-weight="700" fill="white">B</text>
+
+  <!-- Extension popup panel -->
+  <rect x="390" y="100" width="210" height="300" rx="10" fill="#1a1a2e" stroke="rgba(233,69,96,0.3)" stroke-width="1.5"/>
+
+  <!-- Popup header -->
+  <rect x="390" y="100" width="210" height="48" rx="10" fill="#e94560"/>
+  <rect x="390" y="128" width="210" height="20" fill="#e94560"/>
+  <text x="450" y="130" font-family="Arial" font-size="13" font-weight="700" fill="white">Brendah Ext</text>
+  <circle cx="415" cy="124" r="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="410" y="129" font-family="Arial" font-size="12" fill="white">⚡</text>
+
+  <!-- Popup content rows -->
+  <rect x="406" y="164" width="178" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="414" y="172" width="8" height="8" rx="2" fill="#e94560"/>
+  <rect x="430" y="173" width="80" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <rect x="430" y="183" width="50" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+
+  <rect x="406" y="208" width="178" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="414" y="216" width="8" height="8" rx="2" fill="#e94560"/>
+  <rect x="430" y="217" width="100" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <rect x="430" y="227" width="60" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+
+  <rect x="406" y="252" width="178" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="414" y="260" width="8" height="8" rx="2" fill="#e94560"/>
+  <rect x="430" y="261" width="70" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <rect x="430" y="271" width="90" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Toggle switches -->
+  <rect x="548" y="216" width="28" height="14" rx="7" fill="#e94560"/>
+  <circle cx="569" cy="223" r="5" fill="white"/>
+  <rect x="548" y="260" width="28" height="14" rx="7" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="555" cy="267" r="5" fill="rgba(255,255,255,0.5)"/>
+
+  <!-- Popup footer button -->
+  <rect x="414" y="304" width="162" height="32" rx="6" fill="url(#accent)"/>
+  <text x="470" y="324" font-family="Arial" font-size="12" font-weight="700" fill="white">Run Extension</text>
+
+  <!-- Page content behind popup (blurred) -->
+  <rect x="188" y="92" width="198" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="188" y="116" width="150" height="10" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="188" y="134" width="175" height="10" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="188" y="152" width="120" height="10" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="188" y="180" width="160" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="188" y="252" width="160" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="188" y="324" width="160" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- JS badge bottom right -->
+  <rect x="660" y="400" width="90" height="60" rx="8" fill="#f0db4f"/>
+  <rect x="660" y="430" width="90" height="30" rx="0" fill="#f0db4f"/>
+  <rect x="660" y="428" width="90" height="32" rx="8" fill="#f0db4f"/>
+  <text x="672" y="420" font-family="Arial" font-size="11" font-weight="700" fill="#323330">JavaScript</text>
+  <text x="672" y="448" font-family="Arial Black" font-size="22" font-weight="900" fill="#323330">JS</text>
+
+  <!-- Chrome logo hint top left -->
+  <circle cx="90" cy="100" r="40" fill="none" stroke="rgba(233,69,96,0.3)" stroke-width="2"/>
+  <circle cx="90" cy="100" r="20" fill="none" stroke="rgba(233,69,96,0.5)" stroke-width="2"/>
+  <circle cx="90" cy="100" r="8" fill="#e94560"/>
+  <line x1="90" y1="60" x2="90" y2="80" stroke="rgba(233,69,96,0.6)" stroke-width="2"/>
+  <line x1="90" y1="120" x2="90" y2="140" stroke="rgba(233,69,96,0.6)" stroke-width="2"/>
+  <line x1="50" y1="100" x2="70" y2="100" stroke="rgba(233,69,96,0.6)" stroke-width="2"/>
+  <line x1="110" y1="100" x2="130" y2="100" stroke="rgba(233,69,96,0.6)" stroke-width="2"/>
+  <text x="62" y="160" font-family="Arial" font-size="12" font-weight="600" fill="rgba(255,255,255,0.4)">Extension</text>
+</svg>

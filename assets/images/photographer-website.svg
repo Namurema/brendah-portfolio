@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="paccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#d63450"/>
+    </linearGradient>
+    <linearGradient id="img1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c2c2c"/>
+      <stop offset="100%" style="stop-color:#444"/>
+    </linearGradient>
+    <linearGradient id="img2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#383838"/>
+      <stop offset="100%" style="stop-color:#555"/>
+    </linearGradient>
+    <linearGradient id="img3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e1e"/>
+      <stop offset="100%" style="stop-color:#3a3a3a"/>
+    </linearGradient>
+    <linearGradient id="img4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#303030"/>
+      <stop offset="100%" style="stop-color:#4a4a4a"/>
+    </linearGradient>
+    <linearGradient id="heroOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0,0,0,0.0)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0.75)"/>
+    </linearGradient>
+    <filter id="imgblur">
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#pbg)"/>
+
+  <!-- NAV -->
+  <rect x="0" y="0" width="800" height="56" fill="rgba(0,0,0,0.85)"/>
+  <text x="40" y="34" font-family="Georgia,serif" font-size="20" font-weight="700" fill="white">L</text>
+  <text x="52" y="34" font-family="Georgia,serif" font-size="20" font-weight="300" fill="white">ens &amp;</text>
+  <text x="104" y="34" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#e94560">Light</text>
+  <text x="430" y="35" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.6)">Portfolio</text>
+  <text x="530" y="35" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.6)">About</text>
+  <text x="610" y="35" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.6)">Services</text>
+  <text x="690" y="35" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.6)">Contact</text>
+  <!-- nav accent line -->
+  <line x1="430" y1="50" x2="468" y2="50" stroke="#e94560" stroke-width="2"/>
+
+  <!-- HERO IMAGE (large, fills width) -->
+  <rect x="0" y="56" width="800" height="250" fill="url(#img1)"/>
+  <!-- Simulated photo: landscape with sky/ground split -->
+  <rect x="0" y="56"  width="800" height="130" fill="#232323"/>
+  <rect x="0" y="186" width="800" height="120" fill="#1a1a1a"/>
+  <!-- sky gradient blobs -->
+  <ellipse cx="200" cy="110" rx="180" ry="60" fill="rgba(80,70,60,0.3)" filter="url(#imgblur)"/>
+  <ellipse cx="600" cy="95"  rx="160" ry="50" fill="rgba(60,55,50,0.25)" filter="url(#imgblur)"/>
+  <!-- horizon line -->
+  <line x1="0" y1="186" x2="800" y2="186" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- silhouette trees -->
+  <rect x="60"  y="150" width="12" height="36" fill="#111"/>
+  <ellipse cx="66"  cy="148" rx="18" ry="22" fill="#0f0f0f"/>
+  <rect x="130" y="155" width="10" height="31" fill="#111"/>
+  <ellipse cx="135" cy="153" rx="15" ry="18" fill="#0f0f0f"/>
+  <rect x="680" y="145" width="14" height="41" fill="#111"/>
+  <ellipse cx="687" cy="143" rx="20" ry="24" fill="#0f0f0f"/>
+  <rect x="730" y="158" width="10" height="28" fill="#111"/>
+  <ellipse cx="735" cy="156" rx="14" ry="17" fill="#0f0f0f"/>
+  <!-- camera lens flare -->
+  <circle cx="400" cy="130" r="5"  fill="rgba(255,255,255,0.15)"/>
+  <circle cx="400" cy="130" r="20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <circle cx="400" cy="130" r="40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- hero overlay -->
+  <rect x="0" y="56" width="800" height="250" fill="url(#heroOverlay)"/>
+  <!-- hero text over image -->
+  <text x="400" y="230" font-family="Georgia,serif" font-size="42" font-weight="700" fill="white" text-anchor="middle">Capturing Moments</text>
+  <text x="400" y="260" font-family="Georgia,serif" font-size="16" font-weight="300" fill="rgba(255,255,255,0.65)" text-anchor="middle">that last a lifetime</text>
+  <rect x="340" y="272" width="120" height="1" fill="rgba(233,69,96,0.7)"/>
+
+  <!-- GALLERY GRID -->
+  <rect x="0" y="306" width="800" height="194" fill="#111"/>
+
+  <!-- gallery label -->
+  <text x="40" y="335" font-family="Georgia,serif" font-size="16" font-weight="700" fill="white">Recent Work</text>
+  <rect x="40" y="340" width="60" height="2" fill="#e94560"/>
+
+  <!-- 4 gallery tiles -->
+  <rect x="40"  y="352" width="160" height="110" rx="4" fill="url(#img2)"/>
+  <ellipse cx="120" cy="397" rx="40" ry="28" fill="rgba(255,255,255,0.07)"/>
+  <text x="120" y="403" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.12)" text-anchor="middle">📷</text>
+  <rect x="40"  y="448" width="160" height="2" rx="1" fill="rgba(233,69,96,0)"/>
+
+  <rect x="216" y="352" width="160" height="110" rx="4" fill="url(#img3)"/>
+  <ellipse cx="296" cy="397" rx="35" ry="22" fill="rgba(255,255,255,0.05)"/>
+  <text x="296" y="403" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.1)" text-anchor="middle">🌆</text>
+
+  <rect x="392" y="352" width="160" height="110" rx="4" fill="url(#img4)"/>
+  <ellipse cx="472" cy="397" rx="38" ry="25" fill="rgba(255,255,255,0.06)"/>
+  <text x="472" y="403" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.11)" text-anchor="middle">🎞</text>
+
+  <rect x="568" y="352" width="192" height="110" rx="4" fill="url(#img1)"/>
+  <ellipse cx="664" cy="397" rx="45" ry="30" fill="rgba(255,255,255,0.06)"/>
+  <text x="664" y="403" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.1)" text-anchor="middle">🏔</text>
+
+  <!-- hover shimmer on 3rd tile -->
+  <rect x="392" y="352" width="160" height="110" rx="4" fill="rgba(233,69,96,0.12)" stroke="rgba(233,69,96,0.35)" stroke-width="1.5"/>
+  <text x="472" y="415" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle">View ›</text>
+
+  <!-- camera icon bottom right -->
+  <circle cx="756" cy="472" r="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="745" y="479" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.3)">📷</text>
+</svg>
