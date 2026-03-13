@@ -844,8 +844,10 @@ body {
 }
 
 .project-image-wrapper img.mobile-img {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top center;
     background: #1a1a2e;
+    width: 100%;
 }
 
 .project-item:hover .project-image-wrapper img {
