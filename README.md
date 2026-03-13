@@ -6,7 +6,7 @@ This is my personal developer portfolio website showcasing my projects, skills, 
 
 https://brendah.netlify.app/
 
-#Tech Stack
+Tech Stack
 
 * HTML
 * CSS
@@ -18,4 +18,4 @@ Features
 * Projects section highlighting my work
 * Links to GitHub repositories and contact information
 
- created by Namurema brendah
+ Created by Namurema brendah
